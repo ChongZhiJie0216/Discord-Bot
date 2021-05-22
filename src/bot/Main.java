@@ -9,7 +9,7 @@ import net.dv8tion.jda.api.entities.Activity;
 
 public class Main {
 	public static void main(String[] args) throws LoginException, InterruptedException {
-		JDABuilder builder = JDABuilder.createDefault("ODI5NjA1MDQ0NTAzNTc2NTc2.YG6j5w.kk_XYy4S1F9ISXETlrRPC1ABlhc");// Token
+		JDABuilder builder = JDABuilder.createDefault("");// Token
 		builder.setActivity(Activity.watching("=help"));// Activity
 		JDA jda = builder.build();
 		jda.addEventListener(new command());
